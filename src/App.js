@@ -1,19 +1,28 @@
-import React, {Fragment} from 'react';
+import React, {Fragment, useState} from 'react';
 
 import {Header} from './components/Header/Header';
 import {Footer} from './components/Footer/Footer';
+import {User} from '../src/components/User/User';
 
 
 import './App.css';
 
-function App() {
-  return (
+const App = () => {
+  
+  const[isListView, setIsListView] = useState(true)
 
+console.log("App:", isListView);
+
+const onLayoutToggle = () => {
+  setIsListView(!isListView);
+}
+
+  return (
 
   
     <Fragment>
-    <Header />
-
+    <Header isListView={isListView} onLayoutToggle={onLayoutToggle} />
+    <User isListView={isListView} />
     <Footer />
     
     </Fragment>

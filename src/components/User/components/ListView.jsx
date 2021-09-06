@@ -1,7 +1,7 @@
 import React from "react";
 import { hideMail } from "../../../utilities/utilities.js";
 
-export const ListView = ({ users }) => {
+export const ListView = ( {users} ) => {
   return (
     <ul className="collection">
       {users.map((element) => (

@@ -2,8 +2,9 @@ import React from "react";
 
 import './Header.css'
 
-export const Header = () => {
-    
+export const Header = (props) => {
+   
+
 
 
 return (
@@ -17,13 +18,18 @@ return (
             <a href="#!" >About</a>
             </li>
             <li>
-            <a href="#!" >
+            <a href="#!">
               <i class="material-icons">refresh</i>
             </a>
             </li>
             <li>
-              <a href="#!">
-                <i class="material-icons">view_module</i>
+              <a href="#!" >
+                <a  onClick={props.onLayoutToggle}>
+                
+                {props.isListView 
+                ?<i class="material-icons">view_module</i>
+                :<i class="material-icons">view_list</i>}
+                </a>
               </a>
             </li>
           </ul>
