@@ -1,5 +1,6 @@
 import React from "react";
 
+
 import './Header.css'
 
 export const Header = (props) => {
@@ -18,8 +19,9 @@ return (
             <a href="#!" >About</a>
             </li>
             <li>
-            <a href="#!">
-              <i class="material-icons">refresh</i>
+            <a href="#!" onClick={props.onRefresh}>
+              <i class="material-icons"  >refresh</i>
+              
             </a>
             </li>
             <li>
