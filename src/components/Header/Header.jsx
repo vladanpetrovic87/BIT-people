@@ -16,13 +16,13 @@ return (
         </a>
           <ul className="right" >
             <li>
-            <a href="#!" >About</a>
+               <a href="#!" >About</a>
             </li>
             <li>
-            <a href="#!" onClick={props.onRefresh}>
-              <i class="material-icons"  >refresh</i>
+               <a href="#!" onClick={props.onRefresh}>
+                <i class="material-icons"  >refresh</i>
               
-            </a>
+              </a>
             </li>
             <li>
               <a href="#!" >
