@@ -1,8 +1,8 @@
-import React,{useState, useEffect} from 'react';
+import React from 'react';
 
 import { ListView } from './components/ListView';
 import { GridView} from './components/GridView';
-import{getUsers} from '../../services/services';
+//import{getUsers} from '../../services/services';
 
 
 export const User = (props) =>{
